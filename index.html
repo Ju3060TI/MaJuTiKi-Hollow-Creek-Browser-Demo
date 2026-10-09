@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hollow Creek</title>
+<link rel="stylesheet" href="./css/style.css" />
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+  <canvas id="scene"></canvas>
 
+  <div id="crosshair"></div>
+  <div id="prompt"></div>
+  <div id="toast"></div>
+
+  <div id="hud">
+    <div id="clock">07:00</div>
+    <div id="weight">0.0 / 25 kg</div>
+  </div>
+
+  <div id="backpack" class="hidden">
+    <div class="bp-panel">
+      <h2>Backpack</h2>
+      <div id="bp-grid"></div>
+      <div id="bp-weight">0.0 / 25 kg</div>
+      <div class="bp-hint">TAB — close</div>
+    </div>
+  </div>
+
+  <div id="vignette" class="hidden"></div>
+
+  <div id="splash">
+    <div class="splash-inner">
+      <h1>Hollow Creek</h1>
+      <p class="sub">a secluded Appalachian valley &middot; autumn</p>
+      <p class="begin">CLICK TO BEGIN</p>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
